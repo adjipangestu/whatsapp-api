@@ -13,7 +13,7 @@ const server = http.createServer(app);
 const io = socketIO(server, {
     cors: {
         cors: true,
-        origin: 'http://localhost:8000',
+        origin: 'https://sip.birodasaga.com',
         credentials: true,
     },
     allowEIO3: true
