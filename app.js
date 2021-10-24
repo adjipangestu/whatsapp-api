@@ -8,6 +8,8 @@ const { phoneNumberFormatter } = require('./helpers/formatter');
 const socketIO = require('socket.io');
 const fs = require('fs');
 
+const port = process.env.PORT || 8000;
+
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server, {
@@ -168,6 +170,6 @@ app.post('/send-message', [
     });
 });
 
-server.listen(9999, function() {
-    console.log('App running on *: ' + 9999);
+server.listen(port, function() {
+    console.log('App running on *: ' + port);
 });
