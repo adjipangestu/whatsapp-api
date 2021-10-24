@@ -1,0 +1,4 @@
+node_modules
+whatsapp-sessions*.json
+package-lock.json
+downloaded-media/
